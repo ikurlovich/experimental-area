@@ -6,16 +6,29 @@
 //
 
 import SwiftUI
+import SafariCover
 
 struct ContentView: View {
+    @State var moveSquare: Double = 0
+    @State var isPresented: Bool = false
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
+            Text("Кнопка перехода по ссылке")
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+                .safariCover($isPresented, url: "https://github.com/TopScrech")
+                .padding()
+            Spacer()
+            VStack{
+                Spacer()
+                Rectangle()
+                    .frame(width: 100, height: 100, alignment: .center)
+                    .cornerRadius(10)
+                    .shadow(color: .blue, radius: 5)
+                    .foregroundColor(.purple)
+                Slider(value: $moveSquare)
+            }
+            .padding()
         }
-        .padding()
     }
 }
 

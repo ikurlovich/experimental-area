@@ -14,6 +14,9 @@
 		59A101EB29BAA287000CB149 /* experimental_areaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A101EA29BAA287000CB149 /* experimental_areaTests.swift */; };
 		59A101F529BAA287000CB149 /* experimental_areaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A101F429BAA287000CB149 /* experimental_areaUITests.swift */; };
 		59A101F729BAA287000CB149 /* experimental_areaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A101F629BAA287000CB149 /* experimental_areaUITestsLaunchTests.swift */; };
+		59A1020429BB59D1000CB149 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1020329BB59D1000CB149 /* SwiftUIView.swift */; };
+		59A1020629BB5F00000CB149 /* myModel.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 59A1020529BB5F00000CB149 /* myModel.usdz */; };
+		59A1020929BDFDFE000CB149 /* SafariCover in Frameworks */ = {isa = PBXBuildFile; productRef = 59A1020829BDFDFE000CB149 /* SafariCover */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		59A101F029BAA287000CB149 /* experimental areaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "experimental areaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A101F429BAA287000CB149 /* experimental_areaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experimental_areaUITests.swift; sourceTree = "<group>"; };
 		59A101F629BAA287000CB149 /* experimental_areaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experimental_areaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		59A1020329BB59D1000CB149 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		59A1020529BB5F00000CB149 /* myModel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = myModel.usdz; path = Assets.xcassets/myModel.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A1020929BDFDFE000CB149 /* SafariCover in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,8 @@
 			children = (
 				59A101D929BAA285000CB149 /* experimental_areaApp.swift */,
 				59A101DB29BAA285000CB149 /* ContentView.swift */,
+				59A1020329BB59D1000CB149 /* SwiftUIView.swift */,
+				59A1020529BB5F00000CB149 /* myModel.usdz */,
 				59A101DD29BAA287000CB149 /* Assets.xcassets */,
 				59A101DF29BAA287000CB149 /* Preview Content */,
 			);
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = "experimental area";
+			packageProductDependencies = (
+				59A1020829BDFDFE000CB149 /* SafariCover */,
+			);
 			productName = "experimental area";
 			productReference = 59A101D629BAA285000CB149 /* experimental area.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 59A101CD29BAA285000CB149;
+			packageReferences = (
+				59A1020729BDFDFE000CB149 /* XCRemoteSwiftPackageReference "SafariCover" */,
+			);
 			productRefGroup = 59A101D729BAA285000CB149 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A1020629BB5F00000CB149 /* myModel.usdz in Resources */,
 				59A101E129BAA287000CB149 /* Preview Assets.xcassets in Resources */,
 				59A101DE29BAA287000CB149 /* Assets.xcassets in Resources */,
 			);
@@ -259,6 +274,7 @@
 			files = (
 				59A101DC29BAA285000CB149 /* ContentView.swift in Sources */,
 				59A101DA29BAA285000CB149 /* experimental_areaApp.swift in Sources */,
+				59A1020429BB59D1000CB149 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		59A1020729BDFDFE000CB149 /* XCRemoteSwiftPackageReference "SafariCover" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/SafariCover";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		59A1020829BDFDFE000CB149 /* SafariCover */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59A1020729BDFDFE000CB149 /* XCRemoteSwiftPackageReference "SafariCover" */;
+			productName = SafariCover;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 59A101CE29BAA285000CB149 /* Project object */;
 }
