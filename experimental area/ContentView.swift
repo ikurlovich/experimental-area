@@ -17,6 +17,9 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
                 .safariCover($isPresented, url: "https://github.com/TopScrech")
                 .padding()
+                .onTapGesture {
+                    isPresented = true
+                }
             Spacer()
             VStack{
                 Spacer()
